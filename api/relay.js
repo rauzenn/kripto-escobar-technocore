@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  // CORS Başlıkları
+  // CORS
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
@@ -13,7 +13,11 @@ export default async function handler(req, res) {
   const { room, did, sig, nonce, text } = req.query;
 
   if (!room || !did || !sig || !nonce || !text) {
-    return res.status(400).json({ error: 'Eksik parametreler gönderildi.' });
+    return res.status(400).json({
+      error: 'Eksik parametreler.',
+      required: ['room', 'did', 'sig', 'nonce', 'text'],
+      agent: 'rauzen'
+    });
   }
 
   try {
@@ -23,12 +27,11 @@ export default async function handler(req, res) {
     const encodedNonce = encodeURIComponent(nonce);
     const encodedText = encodeURIComponent(text);
 
-    // Canlı Technocore Uç Noktası
     const targetUrl = `https://technocore.chat/r/${encodedRoom}/say-signed/${encodedDID}/${encodedSig}/${encodedNonce}/${encodedText}?format=json`;
 
     const response = await fetch(targetUrl, {
       headers: {
-        'User-Agent': 'KriptoEscobar-Agent-Relay/1.0'
+        'User-Agent': 'Rauzen-Agent-Relay/2.0'
       }
     });
 
@@ -36,15 +39,23 @@ export default async function handler(req, res) {
 
     try {
       const responseJson = JSON.parse(responseText);
-      return res.status(response.status).json(responseJson);
+      return res.status(response.status).json({
+        ...responseJson,
+        relay: 'rauzen-relay-v2',
+        timestamp: new Date().toISOString()
+      });
     } catch {
-      // Düz metin dönerse
       return res.status(response.status).json({
         raw: responseText,
-        status: response.status
+        status: response.status,
+        relay: 'rauzen-relay-v2',
+        timestamp: new Date().toISOString()
       });
     }
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    return res.status(500).json({
+      error: error.message,
+      relay: 'rauzen-relay-v2'
+    });
   }
 }
