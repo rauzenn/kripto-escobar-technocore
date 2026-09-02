@@ -1,6 +1,6 @@
-# Rauzen — Technocore Autonomous Agent
+# Rauzen — Technocore Autonomous Agent v3.0
 
-> **Flop Labs Technocore** ekosistemi için otonom DID ajanı.  
+> **Flop Labs Technocore** ekosistemi için Q4 2026 testnet-ready otonom DID ajanı.  
 > Fork: [`kriptoescobar007/kripto-escobar-technocore`](https://github.com/kriptoescobar007/kripto-escobar-technocore)
 
 ---
@@ -13,33 +13,35 @@
 | **DID** | `did:key:z6MkwX5tHfMXY3wnpFZqYnCt8dJK2s21CyroczgUWqJ2bTyB` |
 | **Fingerprint** | `ad5dba2fd2b843d7` |
 | **X/Twitter** | [@H4n_eth](https://x.com/H4n_eth) |
-| **Schedule** | Her 2 saatte bir (GitHub Actions) |
-| **Version** | 2.0.0 |
+| **Schedule** | Her 12 saatte bir (günde 2 bakım döngüsü) |
+| **Mode** | Q4 Testnet Preparation |
+| **Version** | 3.0.0 |
 
-## 🚀 Özellikler
+## 🎯 Strateji (v3.0)
 
-### Orijinal Repo'dan Farklı Neler Var?
+AMA sonrası strateji değişikliği: **Lobby spam → Akıllı bakım + Q4 hazırlık**
 
-- **🔄 Çoklu Oda Desteği** — Lobby + Mailbox + Katkı kanıtı yenilemesi
-- **💬 Dinamik Mesaj Üretimi** — 6 farklı mesaj şablonu, her döngüde farklı
-- **🔑 Session Hash** — Her çalışmada benzersiz tanımlayıcı
-- **📊 Status API** — `/api/status` endpoint'i ile ajan durumu sorgulama
-- **🛡️ Graceful Error Handling** — Hata toleranslı, asla crash etmeyen tasarım
-- **📜 Katkı Kanıtı Yenileme** — Contribution proof'un periyodik olarak yayınlanması
+- ❌ ~~2 saatte bir lobby ping~~ (artık airdrop değeri yok)
+- ✅ Günde 2 bakım döngüsü (odaları canlı tutar)
+- ✅ Profil notu tazeleme (7 gün limiti)
+- ✅ `d-rauzen` özel odası sahiplenme & canlı tutma
+- ✅ Katkı kanıtı yenileme
+- 🔜 Q4: Faucet → Inference harcama pipeline'ı
 
-### Ajan Döngüsü (Her 2 saatte)
+### Bakım Döngüsü (Her 12 saatte)
 
 ```
-1. 📡 Lobby'e otonom sinyal gönder (dinamik mesaj)
-2. 💌 Mailbox'a heartbeat gönder (online durumu)
-3. 📜 Katkı kanıtını yenile (contribution-alive)
+1. 📡 Lobby'e bakım mesajı (oda canlı kalır)
+2. 🏠 d-rauzen odası keepalive (sahiplenme korunur)
+3. 📋 Profil notu tazeleme (7 gün kuralı)
+4. 📜 Katkı notu tazeleme
 ```
 
 ## 📁 Dosya Yapısı
 
 ```
-├── agent.py                      # Otonom ajan (Python + PyNaCl)
-├── .github/workflows/agent.yml   # GitHub Actions cron (2 saat)
+├── agent.py                      # Otonom ajan v3.0 (Q4-ready)
+├── .github/workflows/agent.yml   # GitHub Actions (12 saat)
 ├── api/
 │   ├── relay.js                  # Vercel relay proxy
 │   └── status.js                 # Ajan durum API'si
@@ -49,40 +51,14 @@
 └── vercel.json                   # Vercel konfigürasyonu
 ```
 
-## 🔧 Kurulum
+## 🔧 Q4 2026 Testnet Planı
 
-### 1. GitHub Secrets Ayarlama
+```
+Faucet FLOP çek → Inference'a harca → 3:1 oranında kilit aç → Tekrarla
+```
 
-Repo → Settings → Secrets and variables → Actions → New repository secret:
-
-- `TECHNOCORE_SECRET_KEY` → Ed25519 secret key (hex)
-- `TECHNOCORE_DID` → `did:key:z6Mk...`
-
-### 2. GitHub Actions'ı Aktifleştir
-
-Fork'larda Actions varsayılan olarak devre dışıdır:
-
-1. Repo → **Actions** sekmesi
-2. **"I understand my workflows, go ahead and enable them"** butonuna tıklayın
-3. İlk çalıştırma için **"Run workflow"** butonunu kullanın
-
-### 3. Vercel Deploy (Opsiyonel)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/rauzenn/kripto-escobar-technocore)
-
-## 🔗 API Endpoints
-
-| Endpoint | Açıklama |
-|---|---|
-| `/api/relay?room=...&did=...&sig=...&nonce=...&text=...` | İmzalı mesaj relay |
-| `/api/status` | Ajan durum bilgisi |
-
-## 🏗️ Ecosystem
-
-- [Flop Labs](https://flop.labs) — Technocore geliştirici
-- [Technocore Chat](https://technocore.chat) — DID iletişim platformu
-- [@H4n_eth](https://x.com/H4n_eth) — Ajan operatörü
+Testnet başladığında bu pipeline otomatik devreye girecek.
 
 ---
 
-> ⚠️ **Güvenlik**: Private key dosyaları bu repoda **yer almaz**. Tüm hassas bilgiler GitHub Secrets üzerinden yönetilir.
+> ⚠️ **Güvenlik**: Private key dosyaları bu repoda yer almaz. GitHub Secrets üzerinden yönetilir.

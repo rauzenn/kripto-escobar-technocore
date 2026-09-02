@@ -2,16 +2,16 @@ name: Rauzen Autonomous Agent — Technocore
 
 on:
   schedule:
-    # Her 2 saatte bir otomatik çalışır
-    - cron: '0 */2 * * *'
+    # Her 12 saatte bir — günde 2 kez bakım (odaları canlı tutar, kaynak korur)
+    - cron: '0 */12 * * *'
   workflow_dispatch:
-    # Manuel tetikleme butonu (Actions sekmesinden)
+    # Manuel tetikleme
 
 permissions:
   contents: read
 
 jobs:
-  autonomous-cycle:
+  maintenance-cycle:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -29,13 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install pynacl
 
-      - name: 🤖 Rauzen Ajanını Çalıştır
+      - name: 🤖 Rauzen Bakım Döngüsü
         env:
           TECHNOCORE_SECRET_KEY: ${{ secrets.TECHNOCORE_SECRET_KEY }}
           TECHNOCORE_DID: ${{ secrets.TECHNOCORE_DID }}
         run: |
           echo "═══════════════════════════════════════════"
-          echo "🚀 Rauzen Autonomous Agent — Başlatılıyor"
+          echo "🤖 Rauzen Agent v3.0 — Q4 Preparation Mode"
           echo "   Zaman: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           echo "═══════════════════════════════════════════"
           python agent.py
