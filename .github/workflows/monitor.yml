@@ -1,0 +1,40 @@
+name: Rauzen Ecosystem Monitor
+
+on:
+  schedule:
+    # Her 6 saatte bir ekosistem taraması
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Manuel tetikleme
+
+permissions:
+  contents: write
+
+jobs:
+  ecosystem-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: 📥 Repoyu Çek
+        uses: actions/checkout@v4
+
+      - name: 🐍 Python 3.11 Kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🔍 Ekosistem Taraması
+        run: |
+          echo "═══════════════════════════════════════════"
+          echo "🔍 Rauzen Ecosystem Monitor"
+          echo "   Zaman: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "═══════════════════════════════════════════"
+          python monitor.py
+
+      - name: 💾 State Kaydet
+        run: |
+          git config user.name "Rauzen Monitor Bot"
+          git config user.email "monitor@rauzen.agent"
+          git add monitor_state.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "🔍 monitor: state update $(date -u +%Y-%m-%dT%H:%M:%SZ)" && git push || true
