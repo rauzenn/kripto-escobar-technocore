@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 18796,
-      "last_check": "2026-09-10T04:03:57.921514+00:00"
+      "content_length": 17586,
+      "last_check": "2026-09-10T10:59:24.429464+00:00"
     },
     "announcements": {
-      "content_length": 18051,
-      "last_check": "2026-09-10T04:03:58.664311+00:00"
+      "content_length": 18607,
+      "last_check": "2026-09-10T10:59:25.022806+00:00"
     },
     "dev": {
-      "content_length": 17332,
-      "last_check": "2026-09-10T04:03:59.471241+00:00"
+      "content_length": 19250,
+      "last_check": "2026-09-10T10:59:25.633179+00:00"
     },
     "faucet": {
-      "content_length": 18822,
-      "last_check": "2026-09-10T04:04:00.236591+00:00"
+      "content_length": 19011,
+      "last_check": "2026-09-10T10:59:26.269107+00:00"
     },
     "testnet": {
-      "content_length": 17069,
-      "last_check": "2026-09-10T04:04:00.585215+00:00"
+      "content_length": 16906,
+      "last_check": "2026-09-10T10:59:26.937685+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
       "latest_sha": "20a4457b",
       "latest_message": "docs(manual): name the operator's measurement probe in CONVENTIONS (#796)",
-      "last_check": "2026-09-10T04:04:00.733905+00:00",
+      "last_check": "2026-09-10T10:59:27.090567+00:00",
       "latest_release": "v0.13.0"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-10T04:04:04.255342+00:00"
+      "last_check": "2026-09-10T10:59:30.626407+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "a82340f1",
       "latest_message": "Update airdrop mechanics to published testnet rules; fix live link",
-      "last_check": "2026-09-10T04:04:05.537730+00:00"
+      "last_check": "2026-09-10T10:59:31.911273+00:00"
     }
   },
-  "last_run": "2026-09-10T04:04:11.190216+00:00",
+  "last_run": "2026-09-10T10:59:37.702810+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
