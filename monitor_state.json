@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 19217,
-      "last_check": "2026-09-12T04:02:55.387492+00:00"
+      "content_length": 17825,
+      "last_check": "2026-09-12T10:25:46.009309+00:00"
     },
     "announcements": {
-      "content_length": 15991,
-      "last_check": "2026-09-12T04:02:55.663453+00:00"
+      "content_length": 16501,
+      "last_check": "2026-09-12T10:25:46.606627+00:00"
     },
     "dev": {
-      "content_length": 19760,
-      "last_check": "2026-09-12T04:02:56.270364+00:00"
+      "content_length": 22322,
+      "last_check": "2026-09-12T10:25:47.211224+00:00"
     },
     "faucet": {
-      "content_length": 21826,
-      "last_check": "2026-09-12T04:02:56.531798+00:00"
+      "content_length": 18879,
+      "last_check": "2026-09-12T10:25:47.822420+00:00"
     },
     "testnet": {
       "content_length": 17014,
-      "last_check": "2026-09-12T04:02:56.794193+00:00"
+      "last_check": "2026-09-12T10:25:48.402168+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
       "latest_sha": "20a4457b",
       "latest_message": "docs(manual): name the operator's measurement probe in CONVENTIONS (#796)",
-      "last_check": "2026-09-12T04:02:57.147626+00:00",
+      "last_check": "2026-09-12T10:25:48.775319+00:00",
       "latest_release": "v0.13.0"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-12T04:03:01.067679+00:00"
+      "last_check": "2026-09-12T10:25:52.659577+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "a82340f1",
       "latest_message": "Update airdrop mechanics to published testnet rules; fix live link",
-      "last_check": "2026-09-12T04:03:02.475775+00:00"
+      "last_check": "2026-09-12T10:25:54.104937+00:00"
     }
   },
-  "last_run": "2026-09-12T04:03:08.954515+00:00",
+  "last_run": "2026-09-12T10:26:00.315884+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
