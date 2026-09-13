@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 18692,
-      "last_check": "2026-09-13T11:28:48.215337+00:00"
+      "content_length": 18345,
+      "last_check": "2026-09-13T15:57:41.669179+00:00"
     },
     "announcements": {
-      "content_length": 16829,
-      "last_check": "2026-09-13T11:28:48.822981+00:00"
+      "content_length": 16092,
+      "last_check": "2026-09-13T15:57:42.458557+00:00"
     },
     "dev": {
-      "content_length": 21901,
-      "last_check": "2026-09-13T11:28:49.423561+00:00"
+      "content_length": 21597,
+      "last_check": "2026-09-13T15:57:43.246357+00:00"
     },
     "faucet": {
-      "content_length": 20865,
-      "last_check": "2026-09-13T11:28:50.011320+00:00"
+      "content_length": 22003,
+      "last_check": "2026-09-13T15:57:44.104765+00:00"
     },
     "testnet": {
-      "content_length": 17041,
-      "last_check": "2026-09-13T11:28:50.601145+00:00"
+      "content_length": 16916,
+      "last_check": "2026-09-13T15:57:44.842915+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
       "latest_sha": "20a4457b",
       "latest_message": "docs(manual): name the operator's measurement probe in CONVENTIONS (#796)",
-      "last_check": "2026-09-13T11:28:50.825552+00:00",
+      "last_check": "2026-09-13T15:57:45.097721+00:00",
       "latest_release": "v0.13.0"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-13T11:28:54.533326+00:00"
+      "last_check": "2026-09-13T15:57:48.749270+00:00"
     },
     "kriptolia/technocore-did-studio": {
-      "latest_sha": "a82340f1",
-      "latest_message": "Update airdrop mechanics to published testnet rules; fix live link",
-      "last_check": "2026-09-13T11:28:55.908139+00:00"
+      "latest_sha": "5518ac64",
+      "latest_message": "Update index.html",
+      "last_check": "2026-09-13T15:57:50.002583+00:00"
     }
   },
-  "last_run": "2026-09-13T11:29:02.251107+00:00",
+  "last_run": "2026-09-13T15:57:56.407821+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
