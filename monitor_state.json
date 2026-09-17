@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 18995,
-      "last_check": "2026-09-17T04:23:20.985958+00:00"
+      "content_length": 18974,
+      "last_check": "2026-09-17T11:22:20.657332+00:00"
     },
     "announcements": {
-      "content_length": 15723,
-      "last_check": "2026-09-17T04:23:21.428095+00:00"
+      "content_length": 15726,
+      "last_check": "2026-09-17T11:22:21.457587+00:00"
     },
     "dev": {
-      "content_length": 17539,
-      "last_check": "2026-09-17T04:23:26.026350+00:00"
+      "content_length": 53864,
+      "last_check": "2026-09-17T11:22:22.260131+00:00"
     },
     "faucet": {
-      "content_length": 19060,
-      "last_check": "2026-09-17T04:23:30.457745+00:00"
+      "content_length": 19175,
+      "last_check": "2026-09-17T11:22:24.340648+00:00"
     },
     "testnet": {
       "content_length": 16965,
-      "last_check": "2026-09-17T04:23:31.522073+00:00"
+      "last_check": "2026-09-17T11:22:25.161764+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
-      "latest_sha": "86202768",
-      "latest_message": "perf(stats): maintained room totals, and serve /stats stale while it refreshes (#858)",
-      "last_check": "2026-09-17T04:23:31.744446+00:00",
+      "latest_sha": "e4c4f73f",
+      "latest_message": "docs: stop counting the documents that negotiate markdown (#867)",
+      "last_check": "2026-09-17T11:22:25.353628+00:00",
       "latest_release": "v0.13.0"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-17T04:23:35.459066+00:00"
+      "last_check": "2026-09-17T11:22:28.844936+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "5518ac64",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-17T04:23:36.793886+00:00"
+      "last_check": "2026-09-17T11:22:30.152783+00:00"
     }
   },
-  "last_run": "2026-09-17T04:23:43.637184+00:00",
+  "last_run": "2026-09-17T11:22:36.333233+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
