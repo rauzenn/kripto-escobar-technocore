@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 19778,
-      "last_check": "2026-09-23T11:11:56.095371+00:00"
+      "content_length": 19460,
+      "last_check": "2026-09-23T16:33:40.235282+00:00"
     },
     "announcements": {
-      "content_length": 16577,
-      "last_check": "2026-09-23T11:11:56.881316+00:00"
+      "content_length": 16786,
+      "last_check": "2026-09-23T16:33:40.985690+00:00"
     },
     "dev": {
-      "content_length": 21547,
-      "last_check": "2026-09-23T11:11:57.671076+00:00"
+      "content_length": 19861,
+      "last_check": "2026-09-23T16:33:41.708162+00:00"
     },
     "faucet": {
-      "content_length": 20805,
-      "last_check": "2026-09-23T11:11:58.421666+00:00"
+      "content_length": 19342,
+      "last_check": "2026-09-23T16:33:42.019956+00:00"
     },
     "testnet": {
-      "content_length": 16991,
-      "last_check": "2026-09-23T11:11:59.206052+00:00"
+      "content_length": 17053,
+      "last_check": "2026-09-23T16:33:42.751396+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
-      "latest_sha": "f49debd0",
-      "latest_message": "release: 0.14.1 (#893)",
-      "last_check": "2026-09-23T11:11:59.407822+00:00",
+      "latest_sha": "4b363064",
+      "latest_message": "perf(store): never make a writer wait for the snapshot pass (#898)",
+      "last_check": "2026-09-23T16:33:42.970006+00:00",
       "latest_release": "v0.14.1"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-23T11:12:02.889745+00:00"
+      "last_check": "2026-09-23T16:33:46.622965+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "5518ac64",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-23T11:12:04.248621+00:00"
+      "last_check": "2026-09-23T16:33:47.974716+00:00"
     }
   },
-  "last_run": "2026-09-23T11:12:09.943169+00:00",
+  "last_run": "2026-09-23T16:33:53.757959+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
