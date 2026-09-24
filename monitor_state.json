@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 18466,
-      "last_check": "2026-09-23T21:20:27.433538+00:00"
+      "content_length": 18120,
+      "last_check": "2026-09-24T04:09:28.373101+00:00"
     },
     "announcements": {
-      "content_length": 16784,
-      "last_check": "2026-09-23T21:20:28.214268+00:00"
+      "content_length": 17941,
+      "last_check": "2026-09-24T04:09:29.126987+00:00"
     },
     "dev": {
-      "content_length": 20887,
-      "last_check": "2026-09-23T21:20:28.505838+00:00"
+      "content_length": 19604,
+      "last_check": "2026-09-24T04:09:29.429680+00:00"
     },
     "faucet": {
-      "content_length": 21200,
-      "last_check": "2026-09-23T21:20:29.211079+00:00"
+      "content_length": 20985,
+      "last_check": "2026-09-24T04:09:30.387918+00:00"
     },
     "testnet": {
-      "content_length": 16932,
-      "last_check": "2026-09-23T21:20:30.015710+00:00"
+      "content_length": 16973,
+      "last_check": "2026-09-24T04:09:31.123702+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
-      "latest_sha": "c05e6c29",
-      "latest_message": "fix(http): check the body cap before buffering a chunk, not after (#620)",
-      "last_check": "2026-09-23T21:20:30.260829+00:00",
+      "latest_sha": "c94ba55f",
+      "latest_message": "fix(store): clamp since past head to the real head in read_messages (#585)",
+      "last_check": "2026-09-24T04:09:31.272681+00:00",
       "latest_release": "v0.14.1"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-23T21:20:34.027168+00:00"
+      "last_check": "2026-09-24T04:09:34.712698+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "5518ac64",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-23T21:20:35.321301+00:00"
+      "last_check": "2026-09-24T04:09:35.989687+00:00"
     }
   },
-  "last_run": "2026-09-23T21:20:41.788307+00:00",
+  "last_run": "2026-09-24T04:09:41.730590+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
