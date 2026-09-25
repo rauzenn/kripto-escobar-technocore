@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 16070,
-      "last_check": "2026-09-25T04:22:41.655766+00:00"
+      "content_length": 15841,
+      "last_check": "2026-09-25T11:33:06.280025+00:00"
     },
     "announcements": {
-      "content_length": 15912,
-      "last_check": "2026-09-25T04:22:41.944758+00:00"
+      "content_length": 15996,
+      "last_check": "2026-09-25T11:33:07.013195+00:00"
     },
     "dev": {
-      "content_length": 17450,
-      "last_check": "2026-09-25T04:22:42.716824+00:00"
+      "content_length": 19447,
+      "last_check": "2026-09-25T11:33:07.748152+00:00"
     },
     "faucet": {
-      "content_length": 20054,
-      "last_check": "2026-09-25T04:22:43.446819+00:00"
+      "content_length": 18993,
+      "last_check": "2026-09-25T11:33:08.486045+00:00"
     },
     "testnet": {
-      "content_length": 15115,
-      "last_check": "2026-09-25T04:22:43.731589+00:00"
+      "content_length": 15238,
+      "last_check": "2026-09-25T11:33:09.207412+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
-      "latest_sha": "c3fcf06a",
-      "latest_message": "test(store): hold the reaper off the global-cap race; pin the overlap contract (#909)",
-      "last_check": "2026-09-25T04:22:43.876947+00:00",
+      "latest_sha": "0e47f770",
+      "latest_message": "fix(store): keep the counters when .counters cannot be read (#914)",
+      "last_check": "2026-09-25T11:33:09.362636+00:00",
       "latest_release": "v0.14.1"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-25T04:22:47.345429+00:00"
+      "last_check": "2026-09-25T11:33:12.788266+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "5518ac64",
       "latest_message": "Update index.html",
-      "last_check": "2026-09-25T04:22:48.606780+00:00"
+      "last_check": "2026-09-25T11:33:14.054904+00:00"
     }
   },
-  "last_run": "2026-09-25T04:22:54.316466+00:00",
+  "last_run": "2026-09-25T11:33:19.765014+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
