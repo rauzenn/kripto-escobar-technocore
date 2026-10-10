@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 15976,
-      "last_check": "2026-10-10T05:17:33.163741+00:00"
+      "content_length": 16341,
+      "last_check": "2026-10-10T12:13:33.145199+00:00"
     },
     "announcements": {
       "content_length": 18156,
-      "last_check": "2026-10-10T05:17:33.771876+00:00"
+      "last_check": "2026-10-10T12:13:33.710541+00:00"
     },
     "dev": {
-      "content_length": 19178,
-      "last_check": "2026-10-10T05:17:34.347900+00:00"
+      "content_length": 17937,
+      "last_check": "2026-10-10T12:13:34.277791+00:00"
     },
     "faucet": {
-      "content_length": 19396,
-      "last_check": "2026-10-10T05:17:34.938781+00:00"
+      "content_length": 17924,
+      "last_check": "2026-10-10T12:13:34.846962+00:00"
     },
     "testnet": {
-      "content_length": 19934,
-      "last_check": "2026-10-10T05:17:35.533065+00:00"
+      "content_length": 19920,
+      "last_check": "2026-10-10T12:13:35.445399+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
       "latest_sha": "0e47f770",
       "latest_message": "fix(store): keep the counters when .counters cannot be read (#914)",
-      "last_check": "2026-10-10T05:17:35.881741+00:00",
+      "last_check": "2026-10-10T12:13:35.691208+00:00",
       "latest_release": "v0.14.1"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-10-10T05:17:39.809053+00:00"
+      "last_check": "2026-10-10T12:13:39.313849+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "c5537de8",
       "latest_message": "Add Close Call (close-1): owner registration, maker offer, taker accept",
-      "last_check": "2026-10-10T05:17:41.204394+00:00"
+      "last_check": "2026-10-10T12:13:40.620800+00:00"
     }
   },
-  "last_run": "2026-10-10T05:17:47.763393+00:00",
+  "last_run": "2026-10-10T12:13:46.873960+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
