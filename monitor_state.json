@@ -1,45 +1,45 @@
 {
   "rooms": {
     "lobby": {
-      "content_length": 16603,
-      "last_check": "2026-10-20T16:38:46.258022+00:00"
+      "content_length": 16286,
+      "last_check": "2026-10-20T21:26:18.857677+00:00"
     },
     "announcements": {
       "content_length": 1913,
-      "last_check": "2026-10-20T16:38:47.032618+00:00"
+      "last_check": "2026-10-20T21:26:19.673538+00:00"
     },
     "dev": {
-      "content_length": 18332,
-      "last_check": "2026-10-20T16:38:47.775387+00:00"
+      "content_length": 18137,
+      "last_check": "2026-10-20T21:26:20.458592+00:00"
     },
     "faucet": {
-      "content_length": 18279,
-      "last_check": "2026-10-20T16:38:48.578128+00:00"
+      "content_length": 18820,
+      "last_check": "2026-10-20T21:26:21.221834+00:00"
     },
     "testnet": {
-      "content_length": 19988,
-      "last_check": "2026-10-20T16:38:49.422813+00:00"
+      "content_length": 19625,
+      "last_check": "2026-10-20T21:26:22.025821+00:00"
     }
   },
   "repos": {
     "flop-labs/technocore-chat": {
       "latest_sha": "4a013e54",
       "latest_message": "fix(humans): ignore stale delegation reads (#939)",
-      "last_check": "2026-10-20T16:38:49.640542+00:00",
+      "last_check": "2026-10-20T21:26:22.249816+00:00",
       "latest_release": "v0.14.1"
     },
     "kriptoescobar007/kripto-escobar-technocore": {
       "latest_sha": "c541692f",
       "latest_message": "Update index.html",
-      "last_check": "2026-10-20T16:38:53.147468+00:00"
+      "last_check": "2026-10-20T21:26:25.729355+00:00"
     },
     "kriptolia/technocore-did-studio": {
       "latest_sha": "c5537de8",
       "latest_message": "Add Close Call (close-1): owner registration, maker offer, taker accept",
-      "last_check": "2026-10-20T16:38:54.471847+00:00"
+      "last_check": "2026-10-20T21:26:27.012190+00:00"
     }
   },
-  "last_run": "2026-10-20T16:39:00.827825+00:00",
+  "last_run": "2026-10-20T21:26:33.676474+00:00",
   "faucet": {
     "https://technocore.chat/r/faucet": "active"
   }
